@@ -1,0 +1,1741 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pioneer College Nowshera | Near Toll Plaza</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            900: '#0A192F',
+                            800: '#112240',
+                            700: '#1D3557',
+                            600: '#2A4365',
+                        },
+                        gold: {
+                            500: '#D4AF37',
+                            600: '#B8952E',
+                            400: '#E5C158',
+                            100: '#FDF8E7',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #D4AF37 0%, #FDF8E7 50%, #B8952E 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .navy-gradient {
+            background: linear-gradient(135deg, #0A192F 0%, #112240 100%);
+        }
+
+        /* Uses local hero-bg.jpg with web fallback */
+        .hero-bg {
+            background: linear-gradient(rgba(10, 25, 47, 0.88), rgba(10, 25, 47, 0.95)), url('hero-bg.jpg'), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1600&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #D4AF37;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body
+    class="font-sans bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen selection:bg-gold-500 selection:text-navy-900">
+
+    <div class="bg-navy-900 border-b border-navy-800 text-slate-300 text-xs sm:text-sm py-2 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+            <div class="flex items-center space-x-6 overflow-hidden">
+                <span class="flex items-center text-gold-400 font-medium shrink-0"><i
+                        class="fa-solid fa-location-dot mr-2"></i> GT Road, Near Toll Plaza, Nowshera</span>
+                <span class="hidden sm:flex items-center shrink-0"><i class="fa-solid fa-phone mr-2 text-gold-400"></i>
+                    +92 (0923) 554433</span>
+                <span class="hidden lg:flex items-center shrink-0"><i
+                        class="fa-solid fa-envelope mr-2 text-gold-400"></i> info@pioneernowshera.edu.pk</span>
+            </div>
+            <div class="flex items-center space-x-3 shrink-0">
+                <button onclick="switchView('student-portal')"
+                    class="hover:text-gold-400 transition-colors px-2 py-0.5 rounded text-xs flex items-center bg-navy-800 border border-slate-700">
+                    <i class="fa-solid fa-user-graduate mr-1.5 text-gold-400"></i> Student Portal
+                </button>
+                <button onclick="switchView('teacher-portal')"
+                    class="hover:text-gold-400 transition-colors px-2 py-0.5 rounded text-xs flex items-center bg-navy-800 border border-slate-700">
+                    <i class="fa-solid fa-chalkboard-user mr-1.5 text-gold-400"></i> Staff Portal
+                </button>
+                <button onclick="switchView('admissions')"
+                    class="bg-gold-500 hover:bg-gold-600 text-navy-900 font-bold px-3 py-0.5 rounded text-xs transition-colors shadow">
+                    Apply Now 2026
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ANNOUNCEMENT TICKER -->
+    <div
+        class="bg-navy-800 text-white text-xs py-1.5 px-4 border-b border-gold-500/20 flex items-center overflow-hidden">
+        <span
+            class="bg-gold-500 text-navy-900 font-bold px-2 py-0.5 rounded text-[10px] uppercase mr-3 shrink-0 flex items-center"><i
+                class="fa-solid fa-bullhorn mr-1"></i> Latest Notice</span>
+        <div class="truncate text-slate-300">
+            <span class="text-gold-400 font-semibold">Admissions 2026 Open:</span> Free MDCAT/ECAT preparatory classes
+            for all enrolled F.Sc students • Merit scholarships up to 100% available for students scoring 90%+ in SSC
+            Exams!
+        </div>
+    </div>
+
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-md border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- LOGO -->
+                <div class="flex items-center space-x-3 cursor-pointer" onclick="switchView('home')">
+                    <div
+                        class="w-12 h-12 bg-navy-900 rounded-xl flex items-center justify-center border-2 border-gold-500 shadow-lg text-gold-500 font-extrabold text-2xl relative overflow-hidden group">
+                        <i class="fa-solid fa-shield-halved text-2xl"></i>
+                        <span
+                            class="absolute bottom-0 text-[8px] bg-gold-500 text-navy-900 font-black w-full text-center">PK</span>
+                    </div>
+                    <div>
+                        <div
+                            class="font-heading font-extrabold text-xl md:text-2xl text-navy-900 leading-none tracking-tight flex items-center">
+                            PIONEER <span class="text-gold-500 ml-1">COLLEGE</span>
+                        </div>
+                        <p class="text-xs text-slate-500 font-semibold tracking-wide uppercase mt-0.5">Nowshera Campus •
+                            Near Toll Plaza</p>
+                    </div>
+                </div>
+
+                <!-- DESKTOP NAV -->
+                <nav class="hidden md:flex items-center space-x-1 lg:space-x-2">
+                    <button onclick="switchView('home')"
+                        class="nav-btn active-nav text-navy-900 hover:text-gold-600 px-3 py-2 rounded-lg font-semibold text-sm transition-all">Home</button>
+                    <button onclick="switchView('about')"
+                        class="nav-btn text-slate-600 hover:text-gold-600 px-3 py-2 rounded-lg font-semibold text-sm transition-all">About
+                        Us</button>
+                    <button onclick="switchView('academics')"
+                        class="nav-btn text-slate-600 hover:text-gold-600 px-3 py-2 rounded-lg font-semibold text-sm transition-all">Academics</button>
+                    <button onclick="switchView('admissions')"
+                        class="nav-btn text-slate-600 hover:text-gold-600 px-3 py-2 rounded-lg font-semibold text-sm transition-all">Admissions</button>
+                    <button onclick="switchView('campus-life')"
+                        class="nav-btn text-slate-600 hover:text-gold-600 px-3 py-2 rounded-lg font-semibold text-sm transition-all">Campus
+                        Life</button>
+                    <button onclick="switchView('blog')"
+                        class="nav-btn text-slate-600 hover:text-gold-600 px-3 py-2 rounded-lg font-semibold text-sm transition-all">News
+                        & Blog</button>
+                    <button onclick="switchView('contact')"
+                        class="nav-btn text-slate-600 hover:text-gold-600 px-3 py-2 rounded-lg font-semibold text-sm transition-all">Contact</button>
+                </nav>
+
+                <!-- RIGHT ACTION & MOBILE TOGGLE -->
+                <div class="flex items-center space-x-3">
+                    <button onclick="switchView('admissions')"
+                        class="hidden sm:flex bg-navy-900 hover:bg-navy-800 text-white px-4 py-2.5 rounded-xl font-bold text-sm shadow-md transition transform hover:-translate-y-0.5 border border-gold-500/30 items-center">
+                        <i class="fa-solid fa-graduation-cap mr-2 text-gold-400"></i> Join Pioneer
+                    </button>
+                    <button id="mobile-menu-btn" onclick="toggleMobileMenu()"
+                        class="md:hidden text-navy-900 text-2xl p-2 rounded-lg focus:outline-none">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- MOBILE MENU POPUP -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-2">
+            <button onclick="switchView('home'); toggleMobileMenu()"
+                class="block w-full text-left px-3 py-2 rounded-lg font-semibold text-slate-700 hover:bg-slate-100">Home</button>
+            <button onclick="switchView('about'); toggleMobileMenu()"
+                class="block w-full text-left px-3 py-2 rounded-lg font-semibold text-slate-700 hover:bg-slate-100">About
+                Us</button>
+            <button onclick="switchView('academics'); toggleMobileMenu()"
+                class="block w-full text-left px-3 py-2 rounded-lg font-semibold text-slate-700 hover:bg-slate-100">Academics
+                & Courses</button>
+            <button onclick="switchView('admissions'); toggleMobileMenu()"
+                class="block w-full text-left px-3 py-2 rounded-lg font-semibold text-slate-700 hover:bg-slate-100">Admissions
+                2026</button>
+            <button onclick="switchView('student-portal'); toggleMobileMenu()"
+                class="block w-full text-left px-3 py-2 rounded-lg font-semibold text-slate-700 hover:bg-slate-100">Student
+                Portal LMS</button>
+            <button onclick="switchView('teacher-portal'); toggleMobileMenu()"
+                class="block w-full text-left px-3 py-2 rounded-lg font-semibold text-slate-700 hover:bg-slate-100">Teacher
+                Portal</button>
+            <button onclick="switchView('campus-life'); toggleMobileMenu()"
+                class="block w-full text-left px-3 py-2 rounded-lg font-semibold text-slate-700 hover:bg-slate-100">Campus
+                Facilities</button>
+            <button onclick="switchView('blog'); toggleMobileMenu()"
+                class="block w-full text-left px-3 py-2 rounded-lg font-semibold text-slate-700 hover:bg-slate-100">Latest
+                News & Blogs</button>
+            <button onclick="switchView('contact'); toggleMobileMenu()"
+                class="block w-full text-left px-3 py-2 rounded-lg font-semibold text-slate-700 hover:bg-slate-100">Contact
+                & Map</button>
+        </div>
+    </header>
+
+    <!-- GLOBAL TOAST NOTIFICATION CONTAINER -->
+    <div id="toast-container" class="fixed bottom-5 right-5 z-50 flex flex-col space-y-2 pointer-events-none"></div>
+
+    <!-- MAIN CONTENT CONTAINER FOR ALL SPA VIEWS -->
+    <main class="flex-grow">
+
+        <!-- ================= PAGE 1: HOME ================= -->
+        <div id="page-home" class="page-view">
+            <section class="hero-bg text-white relative py-20 lg:py-32 overflow-hidden">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                    <div class="grid lg:grid-cols-12 gap-12 items-center">
+                        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                            <span
+                                class="inline-flex items-center px-3.5 py-1.5 rounded-full text-xs font-bold bg-gold-500/20 text-gold-400 border border-gold-500/40">
+                                <i class="fa-solid fa-star mr-2 text-xs"></i> Premier Intermediate College in Nowshera
+                            </span>
+                            <h1
+                                class="font-heading text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                                Pioneering <span class="gold-gradient-text">Academic Excellence</span> & Character
+                                Building
+                            </h1>
+                            <p class="text-slate-300 text-base sm:text-lg max-w-2xl font-normal leading-relaxed">
+                                Strategically situated near Nowshera Toll Plaza. We empower future doctors, engineers,
+                                and tech pioneers through rigorous F.Sc & ICS education combined with specialized
+                                MDCAT/ECAT coaching.
+                            </p>
+                            <div
+                                class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                                <button onclick="switchView('admissions')"
+                                    class="w-full sm:w-auto bg-gold-500 hover:bg-gold-600 text-navy-900 font-extrabold px-8 py-4 rounded-xl shadow-lg transition transform hover:-translate-y-1 text-base flex items-center justify-center">
+                                    Apply Online 2026 <i class="fa-solid fa-arrow-right ml-2"></i>
+                                </button>
+                                <button onclick="switchView('about')"
+                                    class="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white font-semibold px-8 py-4 rounded-xl border border-white/20 backdrop-blur-sm transition text-base flex items-center justify-center">
+                                    Explore Campus & Emblem <i class="fa-solid fa-circle-info ml-2 text-gold-400"></i>
+                                </button>
+                            </div>
+                            <!-- QUICK BADGES -->
+                            <div
+                                class="pt-8 grid grid-cols-3 gap-4 border-t border-slate-700/60 max-w-lg mx-auto lg:mx-0">
+                                <div>
+                                    <div class="text-2xl sm:text-3xl font-extrabold text-gold-400">98%</div>
+                                    <div class="text-xs text-slate-400 font-medium">BISE Pass Rate</div>
+                                </div>
+                                <div>
+                                    <div class="text-2xl sm:text-3xl font-extrabold text-gold-400">15+</div>
+                                    <div class="text-xs text-slate-400 font-medium">Hi-Tech Labs</div>
+                                </div>
+                                <div>
+                                    <div class="text-2xl sm:text-3xl font-extrabold text-gold-400">2500+</div>
+                                    <div class="text-xs text-slate-400 font-medium">Successful Alumni</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- HERO HIGHLIGHT CARD -->
+                        <div class="lg:col-span-5">
+                            <div
+                                class="bg-navy-800/90 border border-gold-500/30 rounded-3xl p-6 sm:p-8 backdrop-blur-md shadow-2xl relative">
+                                <div
+                                    class="absolute -top-4 -right-4 bg-gold-500 text-navy-900 text-xs font-black uppercase px-3 py-1 rounded-full shadow">
+                                    Admissions Open
+                                </div>
+                                <h3 class="text-xl font-bold font-heading text-white mb-4 flex items-center">
+                                    <i class="fa-solid fa-award text-gold-400 mr-2"></i> Why Choose Pioneer Nowshera?
+                                </h3>
+                                <ul class="space-y-4 text-slate-300 text-sm">
+                                    <li class="flex items-start">
+                                        <i class="fa-solid fa-circle-check text-gold-400 mt-1 mr-3"></i>
+                                        <span><strong>Prime Location:</strong> GT Road, Near Toll Plaza – safe and easy
+                                            access for students across Mardan, Charsadda & Peshawar routes.</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fa-solid fa-circle-check text-gold-400 mt-1 mr-3"></i>
+                                        <span><strong>MDCAT / ECAT Focus:</strong> Integrated test prep modules taught
+                                            alongside regular F.Sc syllabus.</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fa-solid fa-circle-check text-gold-400 mt-1 mr-3"></i>
+                                        <span><strong>Digital Portal & LMS:</strong> Real-time attendance tracking and
+                                            online results for parents & students.</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fa-solid fa-circle-check text-gold-400 mt-1 mr-3"></i>
+                                        <span><strong>Air-Conditioned Transport:</strong> Dedicated bus fleet servicing
+                                            all main city arteries.</span>
+                                    </li>
+                                </ul>
+                                <div class="mt-6 pt-4 border-t border-slate-700/80">
+                                    <button onclick="switchView('admissions')"
+                                        class="w-full bg-gold-500/20 hover:bg-gold-500/30 text-gold-400 font-bold py-3 rounded-xl border border-gold-500/40 text-center transition">
+                                        Check Scholarship & Fee Structure
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-16 bg-white">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center max-w-3xl mx-auto mb-12">
+                        <h2 class="text-xs uppercase tracking-widest text-gold-600 font-bold mb-2">Pillar Features</h2>
+                        <h3 class="text-3xl font-extrabold font-heading text-navy-900">World-Class Infrastructure &
+                            Faculty</h3>
+                    </div>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <!-- CARD 1 -->
+                        <div
+                            class="bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:shadow-xl transition transform hover:-translate-y-1">
+                            <div
+                                class="w-14 h-14 bg-navy-900 rounded-xl text-gold-400 flex items-center justify-center text-2xl mb-4 shadow">
+                                <i class="fa-solid fa-flask-vial"></i>
+                            </div>
+                            <h4 class="text-lg font-bold text-navy-900 mb-2">Modern Laboratories</h4>
+                            <p class="text-slate-600 text-sm leading-relaxed">State-of-the-art Physics, Chemistry,
+                                Biology, and Computer labs fully equipped with modern safety standards.</p>
+                        </div>
+                        <!-- CARD 2 -->
+                        <div
+                            class="bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:shadow-xl transition transform hover:-translate-y-1">
+                            <div
+                                class="w-14 h-14 bg-navy-900 rounded-xl text-gold-400 flex items-center justify-center text-2xl mb-4 shadow">
+                                <i class="fa-solid fa-bus"></i>
+                            </div>
+                            <h4 class="text-lg font-bold text-navy-900 mb-2">Dedicated Transport</h4>
+                            <p class="text-slate-600 text-sm leading-relaxed">Air-conditioned college bus routes
+                                extending across Nowshera Cantt, Pabbi, Rashakai, and Toll Plaza corridors.</p>
+                        </div>
+                        <!-- CARD 3 -->
+                        <div
+                            class="bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:shadow-xl transition transform hover:-translate-y-1">
+                            <div
+                                class="w-14 h-14 bg-navy-900 rounded-xl text-gold-400 flex items-center justify-center text-2xl mb-4 shadow">
+                                <i class="fa-solid fa-user-ninja"></i>
+                            </div>
+                            <h4 class="text-lg font-bold text-navy-900 mb-2">MDCAT / ECAT Prep</h4>
+                            <p class="text-slate-600 text-sm leading-relaxed">Early test preparation starting from 1st
+                                year with entry test experts and daily MCQ testing drills.</p>
+                        </div>
+                        <!-- CARD 4 -->
+                        <div
+                            class="bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:shadow-xl transition transform hover:-translate-y-1">
+                            <div
+                                class="w-14 h-14 bg-navy-900 rounded-xl text-gold-400 flex items-center justify-center text-2xl mb-4 shadow">
+                                <i class="fa-solid fa-chalkboard-teacher"></i>
+                            </div>
+                            <h4 class="text-lg font-bold text-navy-900 mb-2">Highly Qualified Faculty</h4>
+                            <p class="text-slate-600 text-sm leading-relaxed">Subject specialists with M.Phil & PhD
+                                credentials bringing decades of BISE exam preparation success.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-16 bg-slate-100">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                        <div>
+                            <span class="text-gold-600 font-bold uppercase text-xs tracking-wider">Educational
+                                Pathways</span>
+                            <h2 class="text-3xl font-extrabold font-heading text-navy-900 mt-1">Explore Academic
+                                Offerings</h2>
+                        </div>
+                        <button onclick="switchView('academics')"
+                            class="mt-4 md:mt-0 text-navy-900 font-bold hover:text-gold-600 flex items-center text-sm">
+                            View Full Syllabi & Electives <i class="fa-solid fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+
+                    <div class="grid lg:grid-cols-3 gap-8">
+                        <!-- PROGRAM 1 -->
+                        <div
+                            class="bg-white rounded-2xl shadow-md border border-slate-200 overflow-hidden group hover:shadow-xl transition">
+                            <div class="bg-navy-900 p-6 text-white relative">
+                                <span
+                                    class="bg-gold-500 text-navy-900 font-extrabold text-xs uppercase px-3 py-1 rounded-full">F.Sc
+                                    Group</span>
+                                <h3 class="text-2xl font-bold font-heading mt-3">Pre-Medical</h3>
+                                <p class="text-slate-300 text-xs mt-1">Pathways to MBBS, BDS, Pharmacy & Allied Health
+                                </p>
+                            </div>
+                            <div class="p-6 space-y-4">
+                                <div class="text-sm text-slate-600">
+                                    <strong>Core Subjects:</strong> Biology, Chemistry, Physics, English, Urdu,
+                                    Islamiat, Tarjuma-tul-Quran, Pak Studies.
+                                </div>
+                                <ul class="text-xs space-y-2 text-slate-500 border-t border-slate-100 pt-3">
+                                    <li class="flex items-center"><i class="fa-solid fa-check text-gold-500 mr-2"></i>
+                                        Weekly MDCAT biological diagram sessions</li>
+                                    <li class="flex items-center"><i class="fa-solid fa-check text-gold-500 mr-2"></i>
+                                        Specialized Botany & Zoology wet labs</li>
+                                </ul>
+                                <button onclick="switchView('admissions')"
+                                    class="w-full bg-slate-100 hover:bg-navy-900 hover:text-white text-navy-900 font-bold py-2.5 rounded-xl text-sm transition">Apply
+                                    for Pre-Medical</button>
+                            </div>
+                        </div>
+
+                        <!-- PROGRAM 2 -->
+                        <div
+                            class="bg-white rounded-2xl shadow-md border border-slate-200 overflow-hidden group hover:shadow-xl transition">
+                            <div class="bg-navy-900 p-6 text-white relative">
+                                <span
+                                    class="bg-gold-500 text-navy-900 font-extrabold text-xs uppercase px-3 py-1 rounded-full">F.Sc
+                                    Group</span>
+                                <h3 class="text-2xl font-bold font-heading mt-3">Pre-Engineering</h3>
+                                <p class="text-slate-300 text-xs mt-1">Pathways to NUST, UET, GIKI & Engineering
+                                    Sciences</p>
+                            </div>
+                            <div class="p-6 space-y-4">
+                                <div class="text-sm text-slate-600">
+                                    <strong>Core Subjects:</strong> Mathematics, Physics, Chemistry, English, Urdu,
+                                    Islamiat, Tarjuma-tul-Quran, Pak Studies.
+                                </div>
+                                <ul class="text-xs space-y-2 text-slate-500 border-t border-slate-100 pt-3">
+                                    <li class="flex items-center"><i class="fa-solid fa-check text-gold-500 mr-2"></i>
+                                        ECAT numerical speed training</li>
+                                    <li class="flex items-center"><i class="fa-solid fa-check text-gold-500 mr-2"></i>
+                                        Applied mechanics & physics experiments</li>
+                                </ul>
+                                <button onclick="switchView('admissions')"
+                                    class="w-full bg-slate-100 hover:bg-navy-900 hover:text-white text-navy-900 font-bold py-2.5 rounded-xl text-sm transition">Apply
+                                    for Pre-Engineering</button>
+                            </div>
+                        </div>
+
+                        <!-- PROGRAM 3 -->
+                        <div
+                            class="bg-white rounded-2xl shadow-md border border-slate-200 overflow-hidden group hover:shadow-xl transition">
+                            <div class="bg-navy-900 p-6 text-white relative">
+                                <span
+                                    class="bg-gold-500 text-navy-900 font-extrabold text-xs uppercase px-3 py-1 rounded-full">ICS
+                                    Group</span>
+                                <h3 class="text-2xl font-bold font-heading mt-3">Computer Science</h3>
+                                <p class="text-slate-300 text-xs mt-1">Pathways to Software Engineering, AI & Data
+                                    Science</p>
+                            </div>
+                            <div class="p-6 space-y-4">
+                                <div class="text-sm text-slate-600">
+                                    <strong>Core Subjects:</strong> Computer Science, Mathematics, Physics / Stats,
+                                    English, Urdu, Islamiat, Pak Studies.
+                                </div>
+                                <ul class="text-xs space-y-2 text-slate-500 border-t border-slate-100 pt-3">
+                                    <li class="flex items-center"><i class="fa-solid fa-check text-gold-500 mr-2"></i>
+                                        C++ & Python introductory workshops</li>
+                                    <li class="flex items-center"><i class="fa-solid fa-check text-gold-500 mr-2"></i>
+                                        High-speed optical fiber internet labs</li>
+                                </ul>
+                                <button onclick="switchView('admissions')"
+                                    class="w-full bg-slate-100 hover:bg-navy-900 hover:text-white text-navy-900 font-bold py-2.5 rounded-xl text-sm transition">Apply
+                                    for ICS</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PRINCIPAL MESSAGE SECTION -->
+            <section class="py-16 bg-white border-t border-slate-200">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="grid lg:grid-cols-12 gap-12 items-center">
+                        <div class="lg:col-span-5 relative">
+                            <div
+                                class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-200 min-h-[350px]">
+                                <!-- DIRECT LOCAL IMAGE LINK WITH FALLBACK -->
+                                <img src="data:image/jpeg;base64,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"
+                                    alt="Yunus - Principal" class="w-full h-full object-cover min-h-[380px]"
+                                    onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop';">
+                                <div
+                                    class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-navy-900 via-navy-900/80 to-transparent p-6 text-white">
+                                    <h4 class="text-xl font-bold font-heading">Yunus</h4>
+                                    <p class="text-gold-400 text-xs font-semibold">Principal & Academic Director,
+                                        Pioneer College Nowshera</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-7 space-y-6">
+                            <span class="text-gold-600 font-bold uppercase text-xs tracking-wider">Leadership
+                                Words</span>
+                            <h2 class="text-3xl font-extrabold font-heading text-navy-900">Nurturing Leaders for
+                                Tomorrow's Challenges</h2>
+                            <p class="text-slate-600 leading-relaxed">
+                                "Welcome to Pioneer College Nowshera, near Toll Plaza. Our campus stands as a beacon of
+                                academic excellence in Khyber Pakhtunkhwa. We believe that true education goes beyond
+                                textbooks; it encompasses moral discipline, analytical thinking, and career
+                                preparation."
+                            </p>
+                            <p class="text-slate-600 leading-relaxed">
+                                "With our dedicated board-oriented curriculum and concurrent MDCAT/ECAT testing modules,
+                                we ensure our students secure admissions in the country's top medical colleges and
+                                engineering universities."
+                            </p>
+                            <div class="pt-2 flex items-center space-x-4">
+                                <button onclick="switchView('about')"
+                                    class="bg-navy-900 text-white font-bold px-6 py-3 rounded-xl hover:bg-navy-800 transition text-sm">
+                                    Read Full History & Emblem Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-16 bg-slate-50">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="flex justify-between items-end mb-10">
+                        <div>
+                            <span class="text-gold-600 font-bold uppercase text-xs tracking-wider">Campus Updates</span>
+                            <h2 class="text-3xl font-extrabold font-heading text-navy-900">Latest News & Articles</h2>
+                        </div>
+                        <button onclick="switchView('blog')"
+                            class="text-navy-900 font-bold hover:text-gold-600 text-sm">See All Articles →</button>
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-6" id="home-blog-feed">
+                        <!-- Populated dynamically via JS -->
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ================= PAGE 2: ABOUT US ================= -->
+        <div id="page-about" class="page-view hidden">
+            <section class="navy-gradient text-white py-16">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <h1 class="text-4xl font-extrabold font-heading text-white">About Pioneer College Nowshera</h1>
+                    <p class="text-gold-400 mt-2 text-sm sm:text-base font-medium">Located Strategically Near Nowshera
+                        Toll Plaza, GT Road</p>
+                </div>
+            </section>
+
+            <section class="py-16 bg-white">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="bg-slate-50 border border-slate-200 rounded-3xl p-8 mb-16 shadow-sm">
+                        <div class="text-center max-w-3xl mx-auto mb-10">
+                            <span
+                                class="bg-gold-100 text-gold-600 font-bold px-3 py-1 rounded-full text-xs uppercase">Identity
+                                & Heritage</span>
+                            <h2 class="text-3xl font-extrabold font-heading text-navy-900 mt-2">A Look Inside Our Emblem
+                                & Logo</h2>
+                            <p class="text-slate-600 text-sm mt-2">The Pioneer College logo is a symbolic representation
+                                of our academic values, honor, and vision for Khyber Pakhtunkhwa youth.</p>
+                        </div>
+
+                        <div class="grid md:grid-cols-12 gap-8 items-center">
+                            <!-- LOGO PREVIEW GRAPHIC -->
+                            <div class="md:col-span-5 flex justify-center">
+                                <div
+                                    class="w-64 h-64 bg-navy-900 rounded-3xl border-4 border-gold-500 shadow-2xl flex flex-col items-center justify-center p-6 text-center relative group">
+                                    <div class="text-gold-400 text-7xl mb-2 transition transform group-hover:scale-110">
+                                        <i class="fa-solid fa-shield-halved"></i>
+                                    </div>
+                                    <div class="text-white font-heading font-black text-xl tracking-wider">PIONEER</div>
+                                    <div class="text-gold-400 text-xs font-bold uppercase tracking-widest">COLLEGE
+                                        NOWSHERA</div>
+                                    <div class="mt-2 flex space-x-2 text-gold-400 text-sm">
+                                        <i class="fa-solid fa-book-open"></i>
+                                        <i class="fa-solid fa-sun"></i>
+                                        <i class="fa-solid fa-graduation-cap"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- SYMBOL BREAKDOWN LIST -->
+                            <div class="md:col-span-7 space-y-6">
+                                <div class="flex items-start">
+                                    <div
+                                        class="w-12 h-12 bg-navy-900 text-gold-400 rounded-xl flex items-center justify-center text-xl shrink-0 mr-4 font-bold">
+                                        1</div>
+                                    <div>
+                                        <h4 class="text-lg font-bold text-navy-900">The Heraldic Shield Base</h4>
+                                        <p class="text-slate-600 text-sm">Symbolizes academic integrity, discipline,
+                                            protection of ethical values, and an unwavering commitment to educational
+                                            standards.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div
+                                        class="w-12 h-12 bg-navy-900 text-gold-400 rounded-xl flex items-center justify-center text-xl shrink-0 mr-4 font-bold">
+                                        2</div>
+                                    <div>
+                                        <h4 class="text-lg font-bold text-navy-900">The Open Book & Torch</h4>
+                                        <p class="text-slate-600 text-sm">Represents continuous pursuit of knowledge,
+                                            intellectual enlightenment, and dispelling ignorance through modern science.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div
+                                        class="w-12 h-12 bg-navy-900 text-gold-400 rounded-xl flex items-center justify-center text-xl shrink-0 mr-4 font-bold">
+                                        3</div>
+                                    <div>
+                                        <h4 class="text-lg font-bold text-navy-900">Deep Navy & Warm Gold Palette</h4>
+                                        <p class="text-slate-600 text-sm">Navy Blue represents wisdom, trust, and
+                                            professional maturity. Warm Gold signifies prestige, academic excellence,
+                                            and a bright future.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- VISION & MISSION -->
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="bg-navy-900 text-white rounded-3xl p-8 border-t-4 border-gold-500 shadow-lg">
+                            <i class="fa-solid fa-eye text-gold-400 text-3xl mb-4"></i>
+                            <h3 class="text-2xl font-bold font-heading mb-3">Our Vision</h3>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                To be recognized as Khyber Pakhtunkhwa's leading pre-university institution, setting
+                                benchmarks for board exam distinction and MDCAT/ECAT admissions while instilling high
+                                moral character.
+                            </p>
+                        </div>
+                        <div class="bg-slate-100 text-navy-900 rounded-3xl p-8 border-t-4 border-navy-900 shadow-sm">
+                            <i class="fa-solid fa-bullseye text-navy-900 text-3xl mb-4"></i>
+                            <h3 class="text-2xl font-bold font-heading mb-3">Our Mission</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                To provide an invigorating academic environment near Nowshera Toll Plaza equipped with
+                                top-tier faculty, modern digital learning tools, and individualized attention for every
+                                student.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ================= PAGE 3: ACADEMICS ================= -->
+        <div id="page-academics" class="page-view hidden">
+            <section class="navy-gradient text-white py-16">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <h1 class="text-4xl font-extrabold font-heading">Academic Programs & Syllabus</h1>
+                    <p class="text-gold-400 mt-2 text-sm">Affiliated with BISE Mardan / Peshawar Standards</p>
+                </div>
+            </section>
+
+            <section class="py-16 bg-slate-50">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+                    <!-- ACADEMIC TAB LIST -->
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
+                            <div
+                                class="w-12 h-12 bg-gold-100 text-gold-600 rounded-xl flex items-center justify-center text-xl mb-4 font-bold">
+                                <i class="fa-solid fa-heart-pulse"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-navy-900 font-heading mb-2">F.Sc Pre-Medical</h3>
+                            <p class="text-slate-600 text-sm mb-4">Designed for aspiring doctors and health scientists.
+                                Covers XI & XII syllabus alongside MDCAT test-taking tactics.</p>
+                            <ul class="text-xs space-y-2 text-slate-700 bg-slate-50 p-4 rounded-xl">
+                                <li>• Biology I & II (Practical Lab Sessions)</li>
+                                <li>• Organic & Inorganic Chemistry</li>
+                                <li>• Physics & Numerical Problem Solving</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
+                            <div
+                                class="w-12 h-12 bg-gold-100 text-gold-600 rounded-xl flex items-center justify-center text-xl mb-4 font-bold">
+                                <i class="fa-solid fa-microchip"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-navy-900 font-heading mb-2">F.Sc Pre-Engineering</h3>
+                            <p class="text-slate-600 text-sm mb-4">Rigorous training in higher mathematics, mechanics,
+                                and physical sciences for engineering university entrances.</p>
+                            <ul class="text-xs space-y-2 text-slate-700 bg-slate-50 p-4 rounded-xl">
+                                <li>• Advanced Calculus & Geometry</li>
+                                <li>• Physics & Mechanics</li>
+                                <li>• Theoretical & Experimental Chemistry</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
+                            <div
+                                class="w-12 h-12 bg-gold-100 text-gold-600 rounded-xl flex items-center justify-center text-xl mb-4 font-bold">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-navy-900 font-heading mb-2">ICS (Computer Science)</h3>
+                            <p class="text-slate-600 text-sm mb-4">Tailored for software engineering and IT fields.
+                                Combines computer architecture with mathematics.</p>
+                            <ul class="text-xs space-y-2 text-slate-700 bg-slate-50 p-4 rounded-xl">
+                                <li>• Computer Science & Database Systems</li>
+                                <li>• Higher Mathematics & Algebra</li>
+                                <li>• Physics / Quantitative Statistics</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- TEST PREP SPECIAL FEATURE -->
+                    <div
+                        class="bg-navy-900 text-white p-8 sm:p-12 rounded-3xl border border-gold-500/30 flex flex-col md:flex-row items-center justify-between gap-8">
+                        <div class="space-y-3">
+                            <span
+                                class="bg-gold-500 text-navy-900 font-extrabold text-xs px-3 py-1 rounded-full uppercase">Integrated
+                                Program</span>
+                            <h3 class="text-3xl font-extrabold font-heading">Free MDCAT & ECAT Preparatory Classes</h3>
+                            <p class="text-slate-300 text-sm max-w-xl">
+                                Every regular student at Pioneer College Nowshera receives complimentary access to
+                                weekend MDCAT/ECAT testing series and entry test guidance workshops.
+                            </p>
+                        </div>
+                        <button onclick="switchView('admissions')"
+                            class="shrink-0 bg-gold-500 hover:bg-gold-600 text-navy-900 font-bold px-8 py-4 rounded-xl shadow-lg transition">
+                            Apply For 2026 Batch
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ================= PAGE 4: ADMISSIONS ================= -->
+        <div id="page-admissions" class="page-view hidden">
+            <section class="navy-gradient text-white py-16">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <h1 class="text-4xl font-extrabold font-heading">Online Admission Portal 2026</h1>
+                    <p class="text-gold-400 mt-2 text-sm">Secure Your Seat at Pioneer College Nowshera (Near Toll Plaza)
+                    </p>
+                </div>
+            </section>
+
+            <section class="py-12 bg-slate-100 border-b border-slate-200">
+                <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div
+                        class="bg-white border border-gold-500/30 rounded-3xl p-6 sm:p-8 shadow-md relative overflow-hidden">
+                        <div
+                            class="flex flex-col sm:flex-row justify-between sm:items-center gap-4 mb-6 border-b border-slate-100 pb-4">
+                            <div>
+                                <span
+                                    class="bg-gold-100 text-gold-600 font-bold text-xs uppercase px-2.5 py-1 rounded-full">Interactive
+                                    Tool</span>
+                                <h3 class="text-2xl font-bold text-navy-900 font-heading mt-1"><i
+                                        class="fa-solid fa-calculator text-gold-500 mr-2"></i> Scholarship & Fee
+                                    Estimator</h3>
+                            </div>
+                            <span class="text-xs text-slate-500">Calculate your fee waiver based on SSC Matriculation
+                                score</span>
+                        </div>
+
+                        <div class="grid md:grid-cols-12 gap-6 items-center">
+                            <div class="md:col-span-7 space-y-4">
+                                <div>
+                                    <label class="block text-xs font-bold text-navy-900 uppercase mb-1">Enter Your SSC /
+                                        Matric Marks (Out of 1100):</label>
+                                    <input type="number" id="calc-marks" max="1100" min="400" placeholder="e.g. 995"
+                                        oninput="calculateScholarship()"
+                                        class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:border-gold-500 text-sm font-bold text-navy-900">
+                                </div>
+                                <div class="text-xs text-slate-500 space-y-1">
+                                    <p>• <strong>950+ Marks (86%+):</strong> 100% Tuition Fee Concession</p>
+                                    <p>• <strong>900 - 949 Marks (81%-85%):</strong> 50% Tuition Fee Concession</p>
+                                    <p>• <strong>825 - 899 Marks (75%-80%):</strong> 25% Tuition Fee Concession</p>
+                                </div>
+                            </div>
+
+                            <div
+                                class="md:col-span-5 bg-navy-900 text-white rounded-2xl p-6 text-center border border-gold-500/30">
+                                <div class="text-xs uppercase text-gold-400 font-semibold tracking-wider">Estimated
+                                    Scholarship</div>
+                                <div id="calc-percentage-badge" class="text-4xl font-extrabold text-white my-2">0%</div>
+                                <p id="calc-status-text" class="text-xs text-slate-300">Enter your marks above to see
+                                    your waiver status.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-16 bg-white">
+                <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="bg-slate-50 border border-slate-200 rounded-3xl p-6 sm:p-10 shadow-lg">
+                        <div class="mb-8 border-b border-slate-200 pb-4">
+                            <h3 class="text-2xl font-bold text-navy-900 font-heading">Student Application Form</h3>
+                            <p class="text-slate-500 text-xs mt-1">Please fill in accurate details. Admission
+                                confirmation will be sent via SMS/WhatsApp.</p>
+                        </div>
+
+                        <form id="admissionForm" onsubmit="handleAdmissionSubmit(event)" class="space-y-6">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-bold text-navy-900 uppercase mb-2">Student Full
+                                        Name *</label>
+                                    <input type="text" required placeholder="e.g. Ahmad Khan"
+                                        class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:border-gold-500 bg-white text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-navy-900 uppercase mb-2">Father /
+                                        Guardian Name *</label>
+                                    <input type="text" required placeholder="e.g. Tariq Mehmood"
+                                        class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:border-gold-500 bg-white text-sm">
+                                </div>
+                            </div>
+
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-bold text-navy-900 uppercase mb-2">SSC (Matric)
+                                        Marks Obtained *</label>
+                                    <input type="number" required max="1100" min="400" placeholder="e.g. 985"
+                                        class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:border-gold-500 bg-white text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-navy-900 uppercase mb-2">Matric Board /
+                                        School *</label>
+                                    <input type="text" required placeholder="e.g. BISE Mardan / BISE Peshawar"
+                                        class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:border-gold-500 bg-white text-sm">
+                                </div>
+                            </div>
+
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-bold text-navy-900 uppercase mb-2">Preferred
+                                        Discipline *</label>
+                                    <select required
+                                        class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:border-gold-500 bg-white text-sm">
+                                        <option value="">Select Group</option>
+                                        <option value="Pre-Medical">F.Sc Pre-Medical</option>
+                                        <option value="Pre-Engineering">F.Sc Pre-Engineering</option>
+                                        <option value="ICS">ICS (Computer Science)</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-navy-900 uppercase mb-2">CNIC / Form-B
+                                        Number *</label>
+                                    <input type="text" required placeholder="17301-XXXXXXX-X"
+                                        class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:border-gold-500 bg-white text-sm">
+                                </div>
+                            </div>
+
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-bold text-navy-900 uppercase mb-2">Contact WhatsApp
+                                        Number *</label>
+                                    <input type="tel" required placeholder="03XX-XXXXXXX"
+                                        class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:border-gold-500 bg-white text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-navy-900 uppercase mb-2">Transport
+                                        Required? *</label>
+                                    <select required
+                                        class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:border-gold-500 bg-white text-sm">
+                                        <option value="Yes">Yes (Bus Service Needed)</option>
+                                        <option value="No">No (Self Transport)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-navy-900 uppercase mb-2">Residential
+                                    Address</label>
+                                <textarea rows="2" placeholder="Street, Village/City, Tehsil..."
+                                    class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:border-gold-500 bg-white text-sm"></textarea>
+                            </div>
+
+                            <button type="submit"
+                                class="w-full bg-navy-900 hover:bg-navy-800 text-white font-extrabold py-4 rounded-xl shadow-lg transition flex items-center justify-center text-base border border-gold-500/40">
+                                <i class="fa-solid fa-paper-plane mr-2 text-gold-400"></i> Submit Online Admission
+                                Application
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ================= PAGE 5: STUDENT PORTAL ================= -->
+        <div id="page-student-portal" class="page-view hidden">
+            <section class="navy-gradient text-white py-12">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <h1 class="text-3xl font-extrabold font-heading">Student Learning Management Portal (LMS)</h1>
+                    <p class="text-gold-400 text-xs sm:text-sm mt-1">Access Marks, Attendance, Roll Slips & Assignment
+                        Dropboxes</p>
+                </div>
+            </section>
+
+            <section class="py-12 bg-slate-100 min-h-[600px]">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <!-- LOGIN SCREEN FOR STUDENT -->
+                    <div id="student-login-card"
+                        class="max-w-md mx-auto bg-white p-8 rounded-3xl border border-slate-200 shadow-xl">
+                        <div class="text-center mb-6">
+                            <div
+                                class="w-16 h-16 bg-navy-900 text-gold-400 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-3 shadow">
+                                <i class="fa-solid fa-user-graduate"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-navy-900 font-heading">Student Login</h3>
+                            <p class="text-xs text-slate-500 mt-1">Enter your assigned Pioneer College Roll Number</p>
+                        </div>
+                        <form onsubmit="handleStudentLogin(event)" class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-bold text-navy-900 uppercase mb-1">Roll Number</label>
+                                <input type="text" id="std-roll" required value="PC-2026-88"
+                                    class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:border-gold-500">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-navy-900 uppercase mb-1">Password</label>
+                                <input type="password" required value="pioneer123"
+                                    class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:border-gold-500">
+                            </div>
+                            <button type="submit"
+                                class="w-full bg-navy-900 hover:bg-navy-800 text-white font-bold py-3 rounded-xl transition text-sm">
+                                Login to LMS Dashboard
+                            </button>
+                        </form>
+                        <p class="text-center text-xs text-slate-400 mt-4">Demo Credentials Auto-filled • Click Login
+                        </p>
+                    </div>
+
+                    <!-- DASHBOARD (HIDDEN INITIALLY) -->
+                    <div id="student-dashboard" class="hidden space-y-8">
+                        <div
+                            class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col sm:flex-row justify-between items-center gap-4">
+                            <div class="flex items-center space-x-4">
+                                <div
+                                    class="w-14 h-14 bg-navy-900 text-gold-400 rounded-full flex items-center justify-center font-bold text-xl border-2 border-gold-500">
+                                    AK
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-navy-900 font-heading">Welcome, Ahmad Khan</h3>
+                                    <p class="text-xs text-slate-500">Roll No: <span
+                                            class="font-bold text-navy-900">PC-2026-88</span> | F.Sc Pre-Medical (1st
+                                        Year - Sec A)</p>
+                                </div>
+                            </div>
+                            <button onclick="logoutStudent()"
+                                class="bg-red-50 text-red-600 hover:bg-red-100 font-bold px-4 py-2 rounded-xl text-xs transition">
+                                <i class="fa-solid fa-right-from-bracket mr-1"></i> Logout
+                            </button>
+                        </div>
+
+                        <!-- STATS GRID -->
+                        <div class="grid md:grid-cols-4 gap-6">
+                            <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+                                <div class="text-slate-400 text-xs font-bold uppercase">Overall Attendance</div>
+                                <div class="text-3xl font-extrabold text-navy-900 mt-2">92.4%</div>
+                                <div class="text-xs text-green-600 font-medium mt-1"><i
+                                        class="fa-solid fa-circle-check"></i> Good Standing</div>
+                            </div>
+                            <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+                                <div class="text-slate-400 text-xs font-bold uppercase">Term GPA / Position</div>
+                                <div class="text-3xl font-extrabold text-navy-900 mt-2">3.92 <span
+                                        class="text-xs text-gold-600 font-normal">(2nd Pos)</span></div>
+                                <div class="text-xs text-slate-500 mt-1">Mid-Term Exams 2026</div>
+                            </div>
+                            <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+                                <div class="text-slate-400 text-xs font-bold uppercase">Pending Assignments</div>
+                                <div class="text-3xl font-extrabold text-navy-900 mt-2">01 Task</div>
+                                <div class="text-xs text-amber-600 font-medium mt-1">Biology Lab Report</div>
+                            </div>
+                            <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+                                <div class="text-slate-400 text-xs font-bold uppercase">BISE Roll No Slip</div>
+                                <div class="text-lg font-bold text-navy-900 mt-2">Ready for Download</div>
+                                <button onclick="triggerToast('Downloading Roll No Slip PDF...', 'success')"
+                                    class="text-xs text-gold-600 hover:underline font-bold mt-1 inline-block">Download
+                                    PDF →</button>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 space-y-6">
+                            <div
+                                class="flex flex-col sm:flex-row justify-between sm:items-center gap-4 border-b border-slate-200 pb-4">
+                                <div>
+                                    <span
+                                        class="bg-gold-100 text-gold-600 font-bold text-[10px] uppercase px-2 py-0.5 rounded">MDCAT
+                                        Prep Series</span>
+                                    <h4 class="text-xl font-bold text-navy-900 font-heading mt-1"><i
+                                            class="fa-solid fa-brain text-gold-500 mr-2"></i> Quick MDCAT Daily MCQ
+                                        Drill</h4>
+                                </div>
+                                <div class="text-xs text-slate-500">Subject: Biology (Cell Biology & Genetics)</div>
+                            </div>
+
+                            <div id="quiz-container" class="space-y-4">
+                                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                                    <p class="font-bold text-navy-900 text-sm mb-3" id="quiz-question">Q1: Which
+                                        organelle is primarily responsible for ATP synthesis in eukaryotic plant and
+                                        animal cells?</p>
+                                    <div class="space-y-2" id="quiz-options">
+                                        <button onclick="checkQuizAnswer(this, false)"
+                                            class="w-full text-left px-4 py-2.5 rounded-lg border border-slate-300 bg-white hover:bg-slate-100 text-xs font-medium transition">A)
+                                            Ribosome</button>
+                                        <button onclick="checkQuizAnswer(this, true)"
+                                            class="w-full text-left px-4 py-2.5 rounded-lg border border-slate-300 bg-white hover:bg-slate-100 text-xs font-medium transition">B)
+                                            Mitochondrion</button>
+                                        <button onclick="checkQuizAnswer(this, false)"
+                                            class="w-full text-left px-4 py-2.5 rounded-lg border border-slate-300 bg-white hover:bg-slate-100 text-xs font-medium transition">C)
+                                            Endoplasmic Reticulum</button>
+                                        <button onclick="checkQuizAnswer(this, false)"
+                                            class="w-full text-left px-4 py-2.5 rounded-lg border border-slate-300 bg-white hover:bg-slate-100 text-xs font-medium transition">D)
+                                            Golgi Apparatus</button>
+                                    </div>
+                                </div>
+                                <div id="quiz-feedback" class="hidden text-xs font-bold p-3 rounded-xl"></div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 space-y-4">
+                            <h4 class="text-lg font-bold text-navy-900 font-heading"><i
+                                    class="fa-solid fa-file-pdf text-red-500 mr-2"></i> Class Study Material & Handouts
+                            </h4>
+                            <div class="grid sm:grid-cols-3 gap-4">
+                                <div
+                                    class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex justify-between items-center">
+                                    <div>
+                                        <div class="text-xs font-bold text-navy-900">Biology Chap 4 Notes</div>
+                                        <div class="text-[10px] text-slate-500">PDF • 2.4 MB</div>
+                                    </div>
+                                    <button onclick="triggerToast('Downloading Biology Notes PDF...', 'success')"
+                                        class="bg-navy-900 text-gold-400 p-2 rounded-lg hover:bg-navy-800 transition"><i
+                                            class="fa-solid fa-download"></i></button>
+                                </div>
+                                <div
+                                    class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex justify-between items-center">
+                                    <div>
+                                        <div class="text-xs font-bold text-navy-900">Chemistry Reaction Charts</div>
+                                        <div class="text-[10px] text-slate-500">PDF • 1.8 MB</div>
+                                    </div>
+                                    <button onclick="triggerToast('Downloading Chemistry Handout PDF...', 'success')"
+                                        class="bg-navy-900 text-gold-400 p-2 rounded-lg hover:bg-navy-800 transition"><i
+                                            class="fa-solid fa-download"></i></button>
+                                </div>
+                                <div
+                                    class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex justify-between items-center">
+                                    <div>
+                                        <div class="text-xs font-bold text-navy-900">Physics Past Board MCQs</div>
+                                        <div class="text-[10px] text-slate-500">PDF • 3.1 MB</div>
+                                    </div>
+                                    <button onclick="triggerToast('Downloading Physics Past Papers PDF...', 'success')"
+                                        class="bg-navy-900 text-gold-400 p-2 rounded-lg hover:bg-navy-800 transition"><i
+                                            class="fa-solid fa-download"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- TAB SECTIONS FOR STUDENT DATA -->
+                        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+                            <div class="bg-slate-50 border-b border-slate-200 px-6 py-3 flex space-x-4">
+                                <span class="font-bold text-sm text-navy-900 border-b-2 border-gold-500 pb-1">Mid-Term
+                                    Board Results</span>
+                            </div>
+                            <div class="p-6 overflow-x-auto">
+                                <table class="w-full text-left text-sm">
+                                    <thead class="bg-slate-100 text-xs uppercase text-slate-600">
+                                        <tr>
+                                            <th class="p-3">Subject</th>
+                                            <th class="p-3">Total Marks</th>
+                                            <th class="p-3">Obtained Marks</th>
+                                            <th class="p-3">Percentage</th>
+                                            <th class="p-3">Grade</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="divide-y divide-slate-100 text-slate-700">
+                                        <tr>
+                                            <td class="p-3 font-semibold">Biology I</td>
+                                            <td class="p-3">85</td>
+                                            <td class="p-3 font-bold text-navy-900">79</td>
+                                            <td class="p-3">92.9%</td>
+                                            <td class="p-3"><span
+                                                    class="bg-green-100 text-green-700 px-2 py-0.5 rounded text-xs font-bold">A+</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3 font-semibold">Chemistry I</td>
+                                            <td class="p-3">85</td>
+                                            <td class="p-3 font-bold text-navy-900">74</td>
+                                            <td class="p-3">87.0%</td>
+                                            <td class="p-3"><span
+                                                    class="bg-green-100 text-green-700 px-2 py-0.5 rounded text-xs font-bold">A+</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3 font-semibold">Physics I</td>
+                                            <td class="p-3">85</td>
+                                            <td class="p-3 font-bold text-navy-900">76</td>
+                                            <td class="p-3">89.4%</td>
+                                            <td class="p-3"><span
+                                                    class="bg-green-100 text-green-700 px-2 py-0.5 rounded text-xs font-bold">A+</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3 font-semibold">English Core</td>
+                                            <td class="p-3">100</td>
+                                            <td class="p-3 font-bold text-navy-900">88</td>
+                                            <td class="p-3">88.0%</td>
+                                            <td class="p-3"><span
+                                                    class="bg-green-100 text-green-700 px-2 py-0.5 rounded text-xs font-bold">A+</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ================= PAGE 6: TEACHER PORTAL ================= -->
+        <div id="page-teacher-portal" class="page-view hidden">
+            <section class="navy-gradient text-white py-12">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <h1 class="text-3xl font-extrabold font-heading">Faculty & Staff Portal</h1>
+                    <p class="text-gold-400 text-xs sm:text-sm mt-1">Manage Class Attendance, Homework Uploads & Grade
+                        Books</p>
+                </div>
+            </section>
+
+            <section class="py-12 bg-slate-100 min-h-[600px]">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <!-- LOGIN SCREEN FOR TEACHER -->
+                    <div id="teacher-login-card"
+                        class="max-w-md mx-auto bg-white p-8 rounded-3xl border border-slate-200 shadow-xl">
+                        <div class="text-center mb-6">
+                            <div
+                                class="w-16 h-16 bg-navy-900 text-gold-400 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-3 shadow">
+                                <i class="fa-solid fa-chalkboard-user"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-navy-900 font-heading">Faculty Login</h3>
+                            <p class="text-xs text-slate-500 mt-1">Enter your Pioneer Staff ID</p>
+                        </div>
+                        <form onsubmit="handleTeacherLogin(event)" class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-bold text-navy-900 uppercase mb-1">Staff ID</label>
+                                <input type="text" required value="FAC-BIO-04"
+                                    class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:border-gold-500">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-navy-900 uppercase mb-1">Password</label>
+                                <input type="password" required value="faculty2026"
+                                    class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:border-gold-500">
+                            </div>
+                            <button type="submit"
+                                class="w-full bg-navy-900 hover:bg-navy-800 text-white font-bold py-3 rounded-xl transition text-sm">
+                                Login to Faculty Portal
+                            </button>
+                        </form>
+                        <p class="text-center text-xs text-slate-400 mt-4">Demo Credentials Auto-filled • Click Login
+                        </p>
+                    </div>
+
+                    <!-- TEACHER DASHBOARD (HIDDEN INITIALLY) -->
+                    <div id="teacher-dashboard" class="hidden space-y-8">
+                        <div
+                            class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col sm:flex-row justify-between items-center gap-4">
+                            <div class="flex items-center space-x-4">
+                                <div
+                                    class="w-14 h-14 bg-navy-900 text-gold-400 rounded-full flex items-center justify-center font-bold text-xl border-2 border-gold-500">
+                                    DR
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-navy-900 font-heading">Dr. Shahab Zafar</h3>
+                                    <p class="text-xs text-slate-500">Head of Biology Department | Staff ID: <span
+                                            class="font-bold text-navy-900">FAC-BIO-04</span></p>
+                                </div>
+                            </div>
+                            <button onclick="logoutTeacher()"
+                                class="bg-red-50 text-red-600 hover:bg-red-100 font-bold px-4 py-2 rounded-xl text-xs transition">
+                                <i class="fa-solid fa-right-from-bracket mr-1"></i> Logout
+                            </button>
+                        </div>
+
+                        <!-- ATTENDANCE MARKER TOOL -->
+                        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+                            <div
+                                class="flex flex-col sm:flex-row justify-between sm:items-center gap-4 border-b border-slate-200 pb-4">
+                                <div>
+                                    <h4 class="text-lg font-bold text-navy-900 font-heading">Quick Attendance Marker
+                                    </h4>
+                                    <p class="text-xs text-slate-500">Class: F.Sc Pre-Medical 1st Year (Section A)</p>
+                                </div>
+                                <button onclick="triggerToast('Class Attendance Marked & Saved to Server!', 'success')"
+                                    class="bg-gold-500 hover:bg-gold-600 text-navy-900 font-bold px-5 py-2.5 rounded-xl text-xs shadow transition">
+                                    Save Today's Attendance
+                                </button>
+                            </div>
+
+                            <div class="space-y-3">
+                                <div
+                                    class="flex items-center justify-between p-3 bg-slate-50 rounded-xl border border-slate-200">
+                                    <span class="text-sm font-semibold text-navy-900">PC-2026-88 — Ahmad Khan</span>
+                                    <div class="space-x-2">
+                                        <button
+                                            onclick="this.className='bg-green-600 text-white px-3 py-1 rounded text-xs font-bold'; this.nextElementSibling.className='bg-slate-200 text-slate-700 px-3 py-1 rounded text-xs font-bold'"
+                                            class="bg-green-600 text-white px-3 py-1 rounded text-xs font-bold">Present</button>
+                                        <button
+                                            onclick="this.className='bg-red-600 text-white px-3 py-1 rounded text-xs font-bold'; this.previousElementSibling.className='bg-slate-200 text-slate-700 px-3 py-1 rounded text-xs font-bold'"
+                                            class="bg-slate-200 text-slate-700 px-3 py-1 rounded text-xs font-bold">Absent</button>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex items-center justify-between p-3 bg-slate-50 rounded-xl border border-slate-200">
+                                    <span class="text-sm font-semibold text-navy-900">PC-2026-89 — Bilal Shah</span>
+                                    <div class="space-x-2">
+                                        <button
+                                            onclick="this.className='bg-green-600 text-white px-3 py-1 rounded text-xs font-bold'; this.nextElementSibling.className='bg-slate-200 text-slate-700 px-3 py-1 rounded text-xs font-bold'"
+                                            class="bg-green-600 text-white px-3 py-1 rounded text-xs font-bold">Present</button>
+                                        <button
+                                            onclick="this.className='bg-red-600 text-white px-3 py-1 rounded text-xs font-bold'; this.previousElementSibling.className='bg-slate-200 text-slate-700 px-3 py-1 rounded text-xs font-bold'"
+                                            class="bg-slate-200 text-slate-700 px-3 py-1 rounded text-xs font-bold">Absent</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ================= PAGE 7: CAMPUS LIFE ================= -->
+        <div id="page-campus-life" class="page-view hidden">
+            <section class="navy-gradient text-white py-16">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <h1 class="text-4xl font-extrabold font-heading">Campus Life & Facilities</h1>
+                    <p class="text-gold-400 mt-2 text-sm">Vibrant Student Experience Near Nowshera Toll Plaza</p>
+                </div>
+            </section>
+
+            <section class="py-16 bg-white">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-10">
+                        <span class="text-gold-600 font-bold uppercase text-xs tracking-wider">Visual Tour</span>
+                        <h2 class="text-3xl font-extrabold font-heading text-navy-900">Explore Pioneer Campus Gallery
+                        </h2>
+                    </div>
+
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="rounded-2xl overflow-hidden shadow-lg border border-slate-200 group cursor-pointer"
+                            onclick="openLightbox('Central Library & Reading Hall', 'library.jpg')">
+                            <div class="h-52 bg-cover bg-center transition transform group-hover:scale-105 duration-300"
+                                style="background-image: url('library.jpg'), url('https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=800&auto=format&fit=crop')">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-navy-900 font-heading mb-2">Central Library & Reading
+                                    Hall</h3>
+                                <p class="text-slate-600 text-xs leading-relaxed">Quiet study zones with thousands of
+                                    reference books, scientific journals, and MDCAT practice material.</p>
+                                <span class="inline-block mt-3 text-xs text-gold-600 font-bold">Click to view full photo
+                                    <i class="fa-solid fa-expand ml-1"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="rounded-2xl overflow-hidden shadow-lg border border-slate-200 group cursor-pointer"
+                            onclick="openLightbox('Science & Computing Labs', 'labs.jpg')">
+                            <div class="h-52 bg-cover bg-center transition transform group-hover:scale-105 duration-300"
+                                style="background-image: url('labs.jpg'), url('https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=800&auto=format&fit=crop')">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-navy-900 font-heading mb-2">Science & Computing Labs
+                                </h3>
+                                <p class="text-slate-600 text-xs leading-relaxed">Equipped with digital microscopes,
+                                    chemical hoods, and high-spec desktop PCs for hands-on learning.</p>
+                                <span class="inline-block mt-3 text-xs text-gold-600 font-bold">Click to view full photo
+                                    <i class="fa-solid fa-expand ml-1"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="rounded-2xl overflow-hidden shadow-lg border border-slate-200 group cursor-pointer"
+                            onclick="openLightbox('Sports & Co-Curricular Complex', 'sports.jpg')">
+                            <div class="h-52 bg-cover bg-center transition transform group-hover:scale-105 duration-300"
+                                style="background-image: url('sports.jpg'), url('https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=800&auto=format&fit=crop')">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-navy-900 font-heading mb-2">Sports & Co-Curriculars
+                                </h3>
+                                <p class="text-slate-600 text-xs leading-relaxed">Cricket tournaments, badminton courts,
+                                    debates society, and annual science exhibition competitions.</p>
+                                <span class="inline-block mt-3 text-xs text-gold-600 font-bold">Click to view full photo
+                                    <i class="fa-solid fa-expand ml-1"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- LIGHTBOX MODAL -->
+        <div id="lightbox-modal"
+            class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md hidden flex items-center justify-center p-4">
+            <div class="relative max-w-4xl w-full bg-navy-900 rounded-3xl overflow-hidden border border-gold-500/30">
+                <button onclick="closeLightbox()"
+                    class="absolute top-4 right-4 bg-white/20 hover:bg-white/40 text-white w-10 h-10 rounded-full flex items-center justify-center text-lg z-10 transition">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <img id="lightbox-img" src="" alt="Campus view" class="w-full h-80 sm:h-96 object-cover"
+                    onerror="this.src='https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1200&auto=format&fit=crop';">
+                <div class="p-6 text-white">
+                    <h3 id="lightbox-title" class="text-2xl font-bold font-heading text-gold-400"></h3>
+                    <p class="text-xs text-slate-300 mt-1">Pioneer College Nowshera • GT Road, Near Toll Plaza Campus
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= PAGE 8: BLOG & NEWS ================= -->
+        <div id="page-blog" class="page-view hidden">
+            <section class="navy-gradient text-white py-16">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <h1 class="text-4xl font-extrabold font-heading">Pioneer News & Blog</h1>
+                    <p class="text-gold-400 mt-2 text-sm">Exam Tips, Career Counseling & Campus Announcements</p>
+                </div>
+            </section>
+
+            <section class="py-12 bg-slate-50">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+                    <!-- SEARCH AND FILTER BAR -->
+                    <div
+                        class="flex flex-col md:flex-row justify-between gap-4 bg-white p-4 rounded-2xl border border-slate-200 shadow-sm">
+                        <div class="relative flex-grow">
+                            <i class="fa-solid fa-magnifying-glass absolute left-4 top-3.5 text-slate-400"></i>
+                            <input type="text" id="blog-search" oninput="filterBlogPosts()"
+                                placeholder="Search articles, e.g. MDCAT, BISE datesheets..."
+                                class="w-full pl-11 pr-4 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:border-gold-500">
+                        </div>
+                        <div class="flex flex-wrap gap-2" id="blog-category-tags">
+                            <button onclick="setBlogFilter('All')"
+                                class="px-3 py-1.5 rounded-xl text-xs font-bold bg-navy-900 text-white">All</button>
+                            <button onclick="setBlogFilter('Academic')"
+                                class="px-3 py-1.5 rounded-xl text-xs font-bold bg-slate-100 text-slate-600 hover:bg-slate-200">Academic
+                                Guides</button>
+                            <button onclick="setBlogFilter('MDCAT')"
+                                class="px-3 py-1.5 rounded-xl text-xs font-bold bg-slate-100 text-slate-600 hover:bg-slate-200">MDCAT
+                                / ECAT</button>
+                            <button onclick="setBlogFilter('Events')"
+                                class="px-3 py-1.5 rounded-xl text-xs font-bold bg-slate-100 text-slate-600 hover:bg-slate-200">Campus
+                                Events</button>
+                        </div>
+                    </div>
+
+                    <!-- BLOG POSTS GRID -->
+                    <div id="blog-grid" class="grid md:grid-cols-3 gap-8">
+                        <!-- Rendered dynamically -->
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ================= PAGE 9: CONTACT US ================= -->
+        <div id="page-contact" class="page-view hidden">
+            <section class="navy-gradient text-white py-16">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <h1 class="text-4xl font-extrabold font-heading">Contact & Visit Us</h1>
+                    <p class="text-gold-400 mt-2 text-sm">Pioneer College, GT Road, Near Toll Plaza, Nowshera</p>
+                </div>
+            </section>
+
+            <section class="py-16 bg-white">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="grid lg:grid-cols-12 gap-12">
+                        <!-- CONTACT FORM -->
+                        <div class="lg:col-span-7 bg-slate-50 p-8 rounded-3xl border border-slate-200 shadow-sm">
+                            <h3 class="text-2xl font-bold font-heading text-navy-900 mb-6">Send an Inquiry</h3>
+                            <form onsubmit="handleContactSubmit(event)" class="space-y-4">
+                                <div>
+                                    <label class="block text-xs font-bold text-navy-900 uppercase mb-1">Your
+                                        Name</label>
+                                    <input type="text" required placeholder="Full Name"
+                                        class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:border-gold-500 bg-white">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-navy-900 uppercase mb-1">Mobile /
+                                        WhatsApp</label>
+                                    <input type="tel" required placeholder="03XX-XXXXXXX"
+                                        class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:border-gold-500 bg-white">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-navy-900 uppercase mb-1">Inquiry
+                                        Topic</label>
+                                    <select
+                                        class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:border-gold-500 bg-white">
+                                        <option>Admissions & Eligibility</option>
+                                        <option>Transport Route Inquiry</option>
+                                        <option>Fee Structure & Scholarships</option>
+                                        <option>Other / General Query</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-navy-900 uppercase mb-1">Your
+                                        Message</label>
+                                    <textarea rows="4" required placeholder="Ask details about batch timings or fees..."
+                                        class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:border-gold-500 bg-white"></textarea>
+                                </div>
+                                <button type="submit"
+                                    class="w-full bg-navy-900 hover:bg-navy-800 text-white font-extrabold py-3.5 rounded-xl transition text-sm">
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+
+                        <!-- LOCATION DETAILS & EMBED -->
+                        <div class="lg:col-span-5 space-y-6">
+                            <div class="bg-navy-900 text-white p-8 rounded-3xl border border-gold-500/30 shadow-lg">
+                                <h3 class="text-xl font-bold font-heading text-gold-400 mb-4">Campus Info</h3>
+                                <ul class="space-y-4 text-sm text-slate-300">
+                                    <li class="flex items-start">
+                                        <i class="fa-solid fa-location-dot text-gold-400 mt-1 mr-3"></i>
+                                        <span>Main GT Road, Near Toll Plaza, Nowshera, Khyber Pakhtunkhwa.</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fa-solid fa-phone text-gold-400 mr-3"></i>
+                                        <span>+92 (0923) 554433 / 554434</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fa-solid fa-envelope text-gold-400 mr-3"></i>
+                                        <span>info@pioneernowshera.edu.pk</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fa-solid fa-clock text-gold-400 mr-3"></i>
+                                        <span>Mon - Sat: 08:00 AM - 03:00 PM</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- MAP PLACEHOLDER -->
+                            <div
+                                class="bg-slate-200 rounded-3xl h-64 flex flex-col items-center justify-center p-6 text-center border border-slate-300 relative overflow-hidden">
+                                <i class="fa-solid fa-map-location-dot text-navy-900 text-4xl mb-2"></i>
+                                <div class="font-bold text-navy-900 text-sm">Nowshera Toll Plaza Location Map</div>
+                                <p class="text-xs text-slate-600 mt-1">Direct access via Main GT Road Highway</p>
+                                <a href="https://maps.google.com" target="_blank"
+                                    class="mt-3 bg-navy-900 text-white text-xs font-bold px-4 py-2 rounded-xl shadow hover:bg-navy-800 transition">Open
+                                    Directions in Google Maps</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <a href="https://wa.me/923000000000?text=Hello%20Pioneer%20College%20Nowshera,%20I%20want%20admission%20details."
+        target="_blank"
+        class="fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center text-2xl transition transform hover:scale-110 border-2 border-white">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- GLOBAL FOOTER -->
+    <footer class="bg-navy-900 text-slate-400 text-xs sm:text-sm border-t border-navy-800 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-12 border-b border-slate-800">
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-2 text-white font-extrabold text-xl font-heading">
+                        <i class="fa-solid fa-shield-halved text-gold-400"></i>
+                        <span>PIONEER COLLEGE</span>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Leading the academic renaissance in Nowshera. Dedicated to providing top board positions and
+                        preparing students for competitive medical & engineering entrance exams.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 font-heading text-base">Quick Links</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><button onclick="switchView('about')" class="hover:text-gold-400">About Our Campus</button>
+                        </li>
+                        <li><button onclick="switchView('academics')" class="hover:text-gold-400">Academic
+                                Disciplines</button></li>
+                        <li><button onclick="switchView('admissions')" class="hover:text-gold-400">Online Admissions
+                                2026</button></li>
+                        <li><button onclick="switchView('student-portal')" class="hover:text-gold-400">Student LMS
+                                Portal</button></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 font-heading text-base">Portals & Login</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><button onclick="switchView('student-portal')" class="hover:text-gold-400">Student Roll No
+                                Slip</button></li>
+                        <li><button onclick="switchView('teacher-portal')" class="hover:text-gold-400">Teacher
+                                Attendance Module</button></li>
+                        <li><button onclick="switchView('blog')" class="hover:text-gold-400">MDCAT Study
+                                Material</button></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 font-heading text-base">Campus Location</h4>
+                    <p class="text-xs leading-relaxed mb-3">
+                        Pioneer College Nowshera,<br>Main GT Road, Near Toll Plaza,<br>Nowshera, KP, Pakistan.
+                    </p>
+                    <div class="text-gold-400 font-bold text-xs">Phone: +92 (0923) 554433</div>
+                </div>
+            </div>
+
+            <div
+                class="pt-8 text-center text-xs text-slate-500 flex flex-col sm:flex-row justify-between items-center gap-4">
+                <div>© 2026 Pioneer Group of Colleges Nowshera. All Rights Reserved.</div>
+                <div class="space-x-4">
+                    <span class="hover:text-gold-400 cursor-pointer">Privacy Policy</span>
+                    <span class="hover:text-gold-400 cursor-pointer">Terms of Service</span>
+                    <span class="hover:text-gold-400 cursor-pointer">BISE Affiliation</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // SAMPLE BLOG DATA
+        const sampleBlogs = [
+            {
+                id: 1,
+                title: "Top 5 Preparation Tips for BISE Mardan Board Examinations 2026",
+                category: "Academic",
+                date: "Aug 02, 2026",
+                summary: "Learn how Pioneer College top positioners organize their daily revision charts to score 1000+ marks.",
+                content: "Scoring top positions in BISE Mardan board examinations requires a strategic approach to time management, diagram practice, and solving past papers under timed conditions..."
+            },
+            {
+                id: 2,
+                title: "Integrated MDCAT Coaching Starts for 1st & 2nd Year Students",
+                category: "MDCAT",
+                date: "Jul 28, 2026",
+                summary: "Our medical faculty has launched daily 30-minute entry test MCQ drills alongside regular intermediate syllabus.",
+                content: "To relieve the stress of post-exam MDCAT prep, Pioneer College Nowshera has integrated daily practice sessions focusing on speed and accuracy..."
+            },
+            {
+                id: 3,
+                title: "Annual Science Exhibition & Robot Prototyping Workshop",
+                category: "Events",
+                date: "Jul 15, 2026",
+                summary: "ICS students showcase innovative automated projects at the Nowshera Toll Plaza campus hall.",
+                content: "Students presented projects ranging from IoT smart home systems to solar tracker prototypes in front of visiting university professors..."
+            }
+        ];
+
+        let activeBlogFilter = 'All';
+
+        // SCHOLARSHIP CALCULATOR LOGIC
+        function calculateScholarship() {
+            const input = document.getElementById('calc-marks');
+            const badge = document.getElementById('calc-percentage-badge');
+            const status = document.getElementById('calc-status-text');
+            const marks = parseInt(input.value) || 0;
+
+            if (marks <= 0 || marks > 1100) {
+                badge.textContent = "0%";
+                status.textContent = "Please enter valid SSC marks (Out of 1100).";
+                return;
+            }
+
+            if (marks >= 950) {
+                badge.textContent = "100%";
+                badge.className = "text-4xl font-extrabold text-green-400 my-2";
+                status.textContent = "🎉 Congratulations! You qualify for a FULL 100% Tuition Fee Scholarship!";
+            } else if (marks >= 900) {
+                badge.textContent = "50%";
+                badge.className = "text-4xl font-extrabold text-gold-400 my-2";
+                status.textContent = "✨ Excellent! You qualify for a 50% Tuition Fee Waiver.";
+            } else if (marks >= 825) {
+                badge.textContent = "25%";
+                badge.className = "text-4xl font-extrabold text-amber-300 my-2";
+                status.textContent = "👍 Great Job! You qualify for a 25% Tuition Fee Waiver.";
+            } else {
+                badge.textContent = "Standard";
+                badge.className = "text-3xl font-extrabold text-slate-300 my-2";
+                status.textContent = "Standard fee structure applies. Contact admissions for hardship assistance.";
+            }
+        }
+
+        // QUIZ LOGIC FOR MDCAT MODULE
+        function checkQuizAnswer(button, isCorrect) {
+            const options = document.querySelectorAll('#quiz-options button');
+            options.forEach(btn => btn.disabled = true);
+
+            const feedback = document.getElementById('quiz-feedback');
+            feedback.classList.remove('hidden');
+
+            if (isCorrect) {
+                button.classList.add('bg-green-600', 'text-white', 'border-green-600');
+                feedback.className = "text-xs font-bold p-3 rounded-xl bg-green-100 text-green-800 border border-green-300";
+                feedback.innerHTML = '<i class="fa-solid fa-circle-check mr-1"></i> Correct! Mitochondrion generates ATP through oxidative phosphorylation.';
+            } else {
+                button.classList.add('bg-red-600', 'text-white', 'border-red-600');
+                feedback.className = "text-xs font-bold p-3 rounded-xl bg-red-100 text-red-800 border border-red-300";
+                feedback.innerHTML = '<i class="fa-solid fa-triangle-exclamation mr-1"></i> Incorrect. Option B (Mitochondrion) is the correct answer!';
+            }
+        }
+
+        // LIGHTBOX MODAL LOGIC
+        function openLightbox(title, imgUrl) {
+            document.getElementById('lightbox-title').textContent = title;
+            document.getElementById('lightbox-img').src = imgUrl;
+            document.getElementById('lightbox-modal').classList.remove('hidden');
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox-modal').classList.add('hidden');
+        }
+
+        // SPA NAVIGATION SYSTEM
+        function switchView(viewName) {
+            const views = document.querySelectorAll('.page-view');
+            views.forEach(v => v.classList.add('hidden'));
+
+            const target = document.getElementById(`page-${viewName}`);
+            if (target) {
+                target.classList.remove('hidden');
+            }
+
+            // Update desktop navbar highlight
+            const navBtns = document.querySelectorAll('.nav-btn');
+            navBtns.forEach(btn => {
+                if (btn.getAttribute('onclick') && btn.getAttribute('onclick').includes(viewName)) {
+                    btn.classList.add('text-gold-600', 'font-bold');
+                    btn.classList.remove('text-slate-600');
+                } else {
+                    btn.classList.remove('text-gold-600', 'font-bold');
+                    btn.classList.add('text-slate-600');
+                }
+            });
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // TOAST NOTIFICATION UTILITY
+        function triggerToast(message, type = 'info') {
+            const container = document.getElementById('toast-container');
+            const toast = document.createElement('div');
+            toast.className = `pointer-events-auto px-5 py-3 rounded-xl shadow-xl text-xs font-bold text-white transition transform translate-y-2 flex items-center space-x-2 ${type === 'success' ? 'bg-emerald-600' : 'bg-navy-900 border border-gold-500'
+                }`;
+            toast.innerHTML = `<i class="fa-solid ${type === 'success' ? 'fa-circle-check' : 'fa-bell'} text-gold-400"></i> <span>${message}</span>`;
+
+            container.appendChild(toast);
+            setTimeout(() => {
+                toast.classList.add('opacity-0');
+                setTimeout(() => toast.remove(), 300);
+            }, 3500);
+        }
+
+        // FORM SUBMISSIONS
+        function handleAdmissionSubmit(e) {
+            e.preventDefault();
+            triggerToast("Admission Application Submitted Successfully! Our Admissions officer will WhatsApp you shortly.", "success");
+            e.target.reset();
+        }
+
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            triggerToast("Thank you! Your message has been sent to Pioneer College Nowshera administration.", "success");
+            e.target.reset();
+        }
+
+        // STUDENT PORTAL SIMULATION
+        function handleStudentLogin(e) {
+            e.preventDefault();
+            document.getElementById('student-login-card').classList.add('hidden');
+            document.getElementById('student-dashboard').classList.remove('hidden');
+            triggerToast("Welcome back, Ahmad Khan!", "success");
+        }
+
+        function logoutStudent() {
+            document.getElementById('student-dashboard').classList.add('hidden');
+            document.getElementById('student-login-card').classList.remove('hidden');
+            triggerToast("Logged out of Student Portal.");
+        }
+
+        // TEACHER PORTAL SIMULATION
+        function handleTeacherLogin(e) {
+            e.preventDefault();
+            document.getElementById('teacher-login-card').classList.add('hidden');
+            document.getElementById('teacher-dashboard').classList.remove('hidden');
+            triggerToast("Faculty Authentication Verified. Welcome Dr. Shahab!", "success");
+        }
+
+        function logoutTeacher() {
+            document.getElementById('teacher-dashboard').classList.add('hidden');
+            document.getElementById('teacher-login-card').classList.remove('hidden');
+            triggerToast("Logged out of Staff Portal.");
+        }
+
+        // BLOG RENDERER
+        function renderBlogs() {
+            const homeFeed = document.getElementById('home-blog-feed');
+            const blogGrid = document.getElementById('blog-grid');
+
+            const filtered = sampleBlogs.filter(b => {
+                const matchesFilter = activeBlogFilter === 'All' || b.category === activeBlogFilter;
+                const searchVal = (document.getElementById('blog-search')?.value || '').toLowerCase();
+                const matchesSearch = b.title.toLowerCase().includes(searchVal) || b.summary.toLowerCase().includes(searchVal);
+                return matchesFilter && matchesSearch;
+            });
+
+            // Render on Home Widget
+            if (homeFeed) {
+                homeFeed.innerHTML = sampleBlogs.slice(0, 3).map(b => `
+                    <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition">
+                        <span class="bg-gold-100 text-gold-600 font-bold px-2.5 py-0.5 rounded text-[10px] uppercase">${b.category}</span>
+                        <h4 class="text-base font-bold text-navy-900 mt-2 mb-2 line-clamp-2">${b.title}</h4>
+                        <p class="text-xs text-slate-500 mb-4 line-clamp-2">${b.summary}</p>
+                        <button onclick="switchView('blog')" class="text-xs text-gold-600 font-bold hover:underline">Read Story →</button>
+                    </div>
+                `).join('');
+            }
+
+            // Render on Main Blog Page
+            if (blogGrid) {
+                if (filtered.length === 0) {
+                    blogGrid.innerHTML = `<div class="col-span-3 text-center py-12 text-slate-400 text-sm">No articles matched your criteria.</div>`;
+                    return;
+                }
+                blogGrid.innerHTML = filtered.map(b => `
+                    <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-lg transition">
+                        <div class="p-6">
+                            <div class="flex justify-between items-center text-xs text-slate-400 mb-3">
+                                <span class="bg-navy-900 text-gold-400 font-bold px-2.5 py-1 rounded-full text-[10px] uppercase">${b.category}</span>
+                                <span>${b.date}</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-navy-900 font-heading mb-2">${b.title}</h3>
+                            <p class="text-slate-600 text-xs leading-relaxed mb-4">${b.summary}</p>
+                            <button onclick="triggerToast('Opening full post viewer...', 'info')" class="w-full bg-slate-50 hover:bg-navy-900 hover:text-white text-navy-900 font-bold py-2 rounded-xl text-xs transition">Read Full Article</button>
+                        </div>
+                    </div>
+                `).join('');
+            }
+        }
+
+        function setBlogFilter(cat) {
+            activeBlogFilter = cat;
+            renderBlogs();
+        }
+
+        function filterBlogPosts() {
+            renderBlogs();
+        }
+
+        // INITIALIZATION ON LOAD
+        window.onload = function () {
+            renderBlogs();
+        }
+    </script>
+</body>
+
+</html>
